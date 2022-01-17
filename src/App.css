@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.commentWithPosts {
+  display: flex;
+  column-gap: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.users {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 2px solid aqua;
+  padding: 8px;
+  row-gap: 5px;
+  column-gap: 5px;
+  width: 250px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.user {
+  border: 2px solid chocolate;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 8px;
+  border: 2px solid orange;
+  padding: 8px;
+}
+
+.post {
+  width: 22%;
+  border: 2px solid #c8ff00;
+  padding: 5px;
+}
+.post h5, .comment h5 {margin: 0;}
+.post p, .comment p {font-size: 12px; margin: 8px 0;}
+
+
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 8px;
+  border: 2px solid red;
+  padding: 8px;
+}
+
+.comment {
+  width: 15%;
+  border: 2px solid #ff2f00;
+  padding: 5px;
 }
