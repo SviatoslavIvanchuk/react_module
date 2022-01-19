@@ -1,15 +1,12 @@
 import React from 'react';
 
 
-const User = ({user: {id, name, email}, getUserId}) => {
-    // const {id, name, email} = props;
-
+const User = ({user}) => {
+    const {id, name, username, email} = user;
 
     return (
         <div className={'userBlock'}>
-            <h3>{id}. {name}</h3>
-            <h5>{email}</h5>
-            <button onClick={() => getUserId(id)}>get User Details</button>
+            <h3>{id}. {name} -- {username} -- {email} </h3>
         </div>
     );
 };
