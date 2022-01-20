@@ -9,7 +9,7 @@ import UserPosts from "../../components/UserDetails/UserPosts";
 
 const UsersPage = () => {
     const [users, setUsers] = useState([]);
-    const [userDetail, setUserDetail] = useState([]);
+    const [userDetail, setUserDetail] = useState(null);
 
     const [userPosts, setUserPosts] = useState([]);
 
@@ -20,7 +20,7 @@ const UsersPage = () => {
     const getUserById = (id) => {
         userService.getById(id).then(value => setUserDetail(value))
     }
-    // console.log(userDetail.id)
+    console.log(userDetail)
 
     const getPostsById = (userId) => {
         postService.getByUserId(userId).then(value => setUserPosts(value))
@@ -30,11 +30,11 @@ const UsersPage = () => {
     return (
         <div className={css.users}>
             <div className={css.usersList}>
-                {users.map(value => <User key={value.id} user={value} getUserById={getUserById} />)}
+                {users.map(value => <User key={value.id+100} user={value} getUserById={getUserById} />)}
             </div>
             <div className={css.info}>
                 <div className={css.userDetails}>
-                    <UserDetails key={userDetail.id} user={userDetail} getPostById={getPostsById} />
+                    {userDetail && <UserDetails key={userDetail.id} user={userDetail} getPostById={getPostsById} />}
                 </div>
                     <UserPosts key={userPosts.id} userId={getPostsById} userPosts={userPosts} />
             </div>

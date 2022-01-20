@@ -1,0 +1,8 @@
+.commentBlock {
+    box-sizing: border-box;
+    border: 2px solid #30b05d;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+}

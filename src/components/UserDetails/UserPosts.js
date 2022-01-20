@@ -5,7 +5,7 @@ import css from "./userDetails.module.css"
 
 const UserPosts = ({userPosts}) => {
 
-    console.log(userPosts);
+    // console.log(userPosts);
 
     return (
         <div className={css.postBlock}>
