@@ -1,0 +1,19 @@
+.user {
+    width: 225px;
+    max-height: 80px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #30b05d;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.user h4 {
+    margin: 4px 0;
+}
+
+.user h5 {
+    margin: 4px 0;
+}

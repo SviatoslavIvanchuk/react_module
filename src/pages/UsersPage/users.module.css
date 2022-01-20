@@ -1,0 +1,17 @@
+.users {
+    display: flex;
+    justify-content: space-between;
+}
+
+.usersList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    margin: 4px 0;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.info {
+    width: 63%;
+}
