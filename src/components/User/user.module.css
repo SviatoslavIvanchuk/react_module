@@ -1,6 +1,7 @@
 .user {
-    width: 225px;
-    max-height: 80px;
+    min-width: 225px;
+    min-height: 88px;
+    max-height: 100px;
     display: flex;
     flex-direction: column;
     border: 2px solid #30b05d;
@@ -16,4 +17,16 @@
 
 .user h5 {
     margin: 4px 0;
+}
+
+.button {
+    height: 25px;
+    width: 77px;
+    position: relative;
+    z-index: 999;
+    left: 148px;
+    bottom: 25px;
+    border: 2px solid #30b05d;
+    padding: 4px;
+    border-radius: 20px 0 8px 0;
 }
