@@ -1,15 +1,13 @@
 import React from 'react';
 
 import css from "./comments.module.css"
+import Comment from "./Comment/Comment";
 
-const Comments = ({comment}) => {
-    const {postId, id, name, email, body} = comment;
+const Comments = ({comments}) => {
 
     return (
         <div className={css.commentBlock}>
-            <h4>{postId}-{id}. {name}</h4>
-            <p>Email: {email}</p>
-            <h5>{body}</h5>
+            {comments.map(value => <Comment comment={value} /> )}
         </div>
     );
 };

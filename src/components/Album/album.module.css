@@ -1,3 +1,12 @@
-.albumBlock h4 {
-    margin: 4px 0;
+.albumBlock {
+    border: 2px solid orange;
+    border-radius: 8px;
+    padding: 4px;
+    margin-top: 8px;
+    width: 300px;
 }
+
+.albumBlock h4 {
+    margin: 6px 8px;
+}
+

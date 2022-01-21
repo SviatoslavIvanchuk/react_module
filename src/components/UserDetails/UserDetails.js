@@ -1,8 +1,9 @@
 import React from 'react';
 
 import css from "./userDetails.module.css";
+import { Link} from "react-router-dom";
 
-const UserDetails = ({user, getPostById}) => {
+const UserDetails = ({user, getPostByUserId}) => {
 
     let userList = [];
     function getItem(user) {
@@ -18,10 +19,13 @@ const UserDetails = ({user, getPostById}) => {
     // console.log(userList)
     // console.log(user.id)
 
+
     return (
         <div className={css.grid}>
+
             {userList.map(item => <h5 className={css.lineStyle}>{item}</h5>)}
-            <button onClick={() => getPostById(user.id)}>Posts</button>
+            <Link to={'posts'}><button onClick={() => getPostByUserId(user.id) }>Posts</button></Link>
+
         </div>
     );
 };

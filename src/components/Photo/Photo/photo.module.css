@@ -1,0 +1,9 @@
+.photoBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    width: 160px;
+    border: 2px solid #778806;
+
+}

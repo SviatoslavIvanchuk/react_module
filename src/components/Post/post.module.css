@@ -1,5 +1,6 @@
 .postBlock {
     width: 250px;
+    height: 50px;
     border: 2px solid #4a8002;
     padding: 0 6px;
     box-sizing: border-box;
@@ -7,4 +8,9 @@
 
 .postBlock h5, h6 {
     margin: 8px 0;
+}
+
+.post a {
+    text-decoration: none;
+    color: black;
 }

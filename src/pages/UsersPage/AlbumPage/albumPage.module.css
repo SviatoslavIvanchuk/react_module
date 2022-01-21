@@ -1,0 +1,13 @@
+.albumsBlock {
+    width: 100%;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+.albums {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}

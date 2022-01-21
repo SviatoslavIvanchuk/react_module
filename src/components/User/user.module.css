@@ -1,4 +1,4 @@
-.user {
+.userBlock {
     min-width: 225px;
     min-height: 88px;
     max-height: 100px;
@@ -9,13 +9,10 @@
     box-sizing: border-box;
     border-radius: 8px;
     user-select: none;
+    text-decoration: none;
 }
 
-.user h4 {
-    margin: 4px 0;
-}
-
-.user h5 {
+.userBlock h4, .userBlock h5 {
     margin: 4px 0;
 }
 
@@ -29,4 +26,9 @@
     border: 2px solid #30b05d;
     padding: 4px;
     border-radius: 20px 0 8px 0;
+}
+
+.user a {
+    text-decoration: none;
+    color: black;
 }

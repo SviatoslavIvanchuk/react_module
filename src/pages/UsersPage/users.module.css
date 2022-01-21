@@ -3,15 +3,20 @@
     justify-content: space-between;
 }
 
-.usersList {
+.users .links{
     display: flex;
     flex-wrap: wrap;
     width: 35%;
+    height: 60vh;
     margin: 4px 0;
     row-gap: 28px;
     column-gap: 10px;
+    text-decoration: none;
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 63%;
 }
