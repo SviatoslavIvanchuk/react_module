@@ -14,8 +14,19 @@
     margin: 10px 0;
 }
 
-.carBlock button {
+.buttons {
     width: 100%;
+}
+
+.carBlock .delete {
+    width: 50%;
     height: 25px;
     border-radius: 6px;
 }
+
+.carBlock .update {
+    width: 50%;
+    height: 25px;
+    border-radius: 6px;
+}
+
