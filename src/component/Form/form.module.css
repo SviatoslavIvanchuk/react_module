@@ -1,0 +1,13 @@
+.form .notValid {
+    color: red;
+    margin: 5px;
+    display: none;
+}
+
+.form .valid {
+    display: block;
+}
+
+.form span {
+    font-size: 18px;
+}

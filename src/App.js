@@ -1,24 +1,20 @@
-import {Route, Routes} from "react-router-dom";
+import Form from "./component/Form/Form";
+import List from "./component/List/List";
+import Status from "./component/Status/Status";
 
-import Layout from "./components/Layout/Layout";
-import CarsPage from "./Pages/Cars/CarsPage";
-import UsersPage from "./Pages/Users/UsersPage";
-import PostsPage from "./Pages/Posts/PostsPage";
-import CommentsPage from "./Pages/Comments/CommentsPage";
-
+import css from "./App.module.css"
 
 function App() {
   return (
-    <>
-        <Routes>
-            <Route path={'/'} element={<Layout/>}>
-                <Route path={'cars'} element={<CarsPage/>} />
-                <Route path={'users'} element={<UsersPage/>} />
-                <Route path={'posts'} element={<PostsPage/>} />
-                <Route path={'comments'} element={<CommentsPage/>} />
-            </Route>
-        </Routes>
-    </>
+    <div className={css.taskList}>
+        <div>
+            <Status/>
+            <hr/>
+            <Form/>
+            <hr/>
+        </div>
+      <List/>
+    </div>
   );
 }
 

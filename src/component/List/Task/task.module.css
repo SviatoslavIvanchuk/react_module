@@ -1,0 +1,14 @@
+.task {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task h2 {
+    margin: 5px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
