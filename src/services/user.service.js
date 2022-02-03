@@ -1,4 +1,4 @@
-import {usersAxiosService} from "./axios.service";
+import {usersAxiosService} from "./userAxios.service";
 import {urls} from "../configs/usersUrls";
 
 

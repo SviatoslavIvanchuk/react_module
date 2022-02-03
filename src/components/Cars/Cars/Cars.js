@@ -14,6 +14,7 @@ const Cars = () => {
         dispatch(getAllCars())
     }, [dispatch])
 
+    console.log(cars);
     return (
         <div className={css.carsBlock}>
             {status === 'pending' && <h2>Loading...</h2>}

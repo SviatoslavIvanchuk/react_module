@@ -1,4 +1,4 @@
-import {carsAxiosService} from "./axios.service";
+import {carsAxiosService} from "./carAxios.service";
 import {urls} from "../configs/carsUrls";
 
 export const carService = {

@@ -13,16 +13,14 @@ const Form = () => {
 
     const submit = (data) => {
         console.log(carForUpdate);
-        if (data) {
-            dispatch(creatCar({data}))
-            console.log(data);
-
-        } else if (carForUpdate !== null) {
+        console.log(data);
+        if (data && carForUpdate.id) {
             dispatch(updateCarById({id: carForUpdate.id, car: data}))
             console.log(carForUpdate);
 
-        } else {
-            console.log('Error')
+        } else if (data) {
+            dispatch(creatCar({data}))
+            console.log(data);
         }
         reset()
     }

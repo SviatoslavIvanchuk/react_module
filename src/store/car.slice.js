@@ -7,17 +7,18 @@ const initialState = {
     cars: [],
     status: null,
     error: null,
-    carForUpdate: null
+    carForUpdate: {}
 }
 
 export const getAllCars = createAsyncThunk(
     'carSlice/getAllCars',
     async (_, {rejectWithValue}) => {
         try {
+            console.log(await carService.getAll());
             return await carService.getAll();
 
         } catch (e) {
-            console.log(e);
+            console.log(e.message());
             return rejectWithValue(e.message)
         }
     }
@@ -54,7 +55,6 @@ export const updateCarById = createAsyncThunk(
     async ({id, car}, {dispatch}) => {
         try {
             const newCar = await carService.updateById(id, car);
-            console.log(newCar);
             dispatch(updateCar({car: newCar}))
         } catch (e) {
 
