@@ -9,13 +9,11 @@ const initialState = {
 
 export const getAllPosts = createAsyncThunk(
     'postsSlice/getAllPosts',
-    async (_, {rejectWithValue}) => {
+    async (_, {dispatch}) => {
         try {
-            console.log(await postService.getAll());
-            return 'Hello'
+            dispatch(addPosts(await postService.getAll()))
         } catch (e) {
             console.log(e);
-            return rejectWithValue(e.message)
         }
     }
 )
@@ -23,7 +21,11 @@ export const getAllPosts = createAsyncThunk(
 const postsSlice = createSlice({
     name: 'postsSlice',
     initialState,
-    reducers: {},
+    reducers: {
+        addPosts: (state, action) => {
+            state.posts = action.payload
+        }
+    },
     extraReducers: {
         [getAllPosts.pending]: (state) => {
             state.status = 'pending'
@@ -42,5 +44,6 @@ const postsSlice = createSlice({
 
 const postsReducer = postsSlice.reducer;
 
+const {addPosts} = postsSlice.actions;
 
 export default postsReducer

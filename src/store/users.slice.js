@@ -9,13 +9,11 @@ const initialState = {
 
 export const getAllUsers = createAsyncThunk(
     'usersSlice/getAllUsers',
-    async (_, {rejectWithValue}) => {
+    async (_, {dispatch}) => {
         try {
-            console.log(await userService.getAll());
-            return await userService.getAll()
+            dispatch(addUser(await userService.getAll()))
         } catch (e) {
-            console.log(e);
-            return rejectWithValue(e.message)
+
         }
     }
 )
@@ -23,7 +21,11 @@ export const getAllUsers = createAsyncThunk(
 const usersSlice = createSlice({
     name: 'usersSlice',
     initialState,
-    reducers: {},
+    reducers: {
+        addUser: (state, action) => {
+           state.users = action.payload
+        }
+    },
 
     extraReducers: {
         [getAllUsers.pending]: (state) => {
@@ -45,5 +47,6 @@ const usersSlice = createSlice({
 
 const usersReducer = usersSlice.reducer;
 
+const {addUser} = usersSlice.actions;
 
 export default usersReducer
