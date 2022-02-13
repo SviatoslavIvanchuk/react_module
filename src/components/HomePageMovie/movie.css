@@ -1,0 +1,55 @@
+.home {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.newMovie .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+    background: #2899e7;
+    text-decoration: none;
+    margin: 15px 40px;
+    border-radius: 5px;
+}
+.newMovie .link span {color: snow; font-size: 25px}
+.newMovie .link:hover span {color: darkorange}
+
+.home img {
+    width: 90%;
+}
+
+.home .info {
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}
+.home .info h1 {color: snow; font-size: 65px; margin: 0}
+
+.home .about {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 35px 0;
+}
+.home span {color: darkorange; font-size: 14px}
+.home p, h4 {color: snow; margin: 0}
+.home p {font-size: 18px}
+
+.home .about .quality {height: 16px; padding: 2px 4px 0; color: snow ; border: 1px solid snow;
+                display: flex; justify-content: center; align-items: center}
+.home .about .quality h6 {margin: 0; font-size: 12px}
+
+/*.lastMovie {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    background: darkorange;*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*}*/

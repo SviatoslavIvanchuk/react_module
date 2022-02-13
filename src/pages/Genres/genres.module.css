@@ -1,0 +1,27 @@
+.genre {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 60px;
+}
+
+
+.genresList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 15px;
+    box-sizing: border-box;
+    column-gap: 15px;
+    text-decoration: none;
+    background: #0d1133;
+    padding: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.movies {
+
+}

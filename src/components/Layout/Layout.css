@@ -1,0 +1,110 @@
+
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+body::-webkit-scrollbar {background-color: #0d1133; width: 8px}
+body::-webkit-scrollbar-thumb {background-color: #28cae7}
+
+.header {
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: #0d1133;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    .logo {
+        color: #2899e7;
+        font-size: 28px;
+    }
+
+    .menu {
+        display: flex;
+        column-gap: 48px;
+        font-size: 20px;
+        color: snow;
+    }
+
+    .header .logo a {
+        text-decoration: none;
+        color: #28cae7;
+    }
+
+    .header .menu a {
+        text-decoration: none;
+        color: snow;
+    }
+    .header .menu a:hover {
+        color: orange;
+    }
+
+
+
+.genresList {
+    position: absolute;
+    left: 10%;
+    z-index: 66;
+    width: 50%;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 15px;
+    box-sizing: border-box;
+    column-gap: 15px;
+    text-decoration: none;
+    background: #0d1133;
+    padding: 30px 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 15px;
+}
+.genres:hover .genresList {display: flex;}
+
+/*===================================Content=======================================*/
+
+.content {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5%;
+    background: #0e1650;
+    transition: 0.15s;
+}
+.contentLight {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5%;
+    background: #2899e7;
+    transition: 0.15s;
+}
+
+.content .pagination {
+
+}
+
+
+/*==================================Footer=======================================*/
+
+.footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    padding: 15px 30px;
+    background: #0d1133;
+    color: snow;
+    box-sizing: border-box;
+    justify-content: right;
+    font-size: 20px;
+}

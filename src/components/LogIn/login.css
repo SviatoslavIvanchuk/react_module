@@ -1,0 +1,50 @@
+.login img {
+    width: 100%;
+}
+.userName {
+    position: relative;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    column-gap: 20px;
+}
+.userName h5 {
+    margin: 0;
+    color: snow;
+    font-size: 18px;
+}
+
+.login button {
+    width: 100%;
+}
+
+
+/*==========================================================================*/
+
+.dialogWind {
+    padding: 0 50px 15px;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px;
+    row-gap: 10px;
+}
+.inputBlock input {height: 28px; }
+
+
+.dialogWind button {
+    width: 80%;
+    height: 28px;
+    margin-left: 10px;
+    color: snow;
+    background: #162580;
+    border: 0;
+    font-weight: bold;
+}
+button:hover {background: #28cae7; color: #162580; }

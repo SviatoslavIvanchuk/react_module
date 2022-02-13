@@ -1,0 +1,22 @@
+.search button img{
+    position: relative;
+    height: 18px;
+}
+.search button {
+    position: relative;
+    background: 0;
+    border: 0;
+    top: 6px;
+    left: -24px;
+    padding: 0;
+}
+
+.search {margin-left: 20%}
+.search input {
+    height: 32px;
+    background: #0d1133;
+    color: snow;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid snow;
+}
